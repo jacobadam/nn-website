@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import GoogleMap from './GoogleMap';
+import "../css/Location.css";
+
 
 class Location extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+      <>
+      <div className="mapContainer">
+        {/* <GoogleMap/> */}
+        </div>
+      </>
     );
   }
 }

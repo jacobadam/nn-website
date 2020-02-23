@@ -1,73 +1,41 @@
-body {
-  margin: 0;
-  background: #222;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 800;
-  background-image: url("https://images.unsplash.com/photo-1468616047823-d688c44bf6dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80");
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-header {
-  background: lightblue;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: center;
-  padding: 10px 0;
-}
-
-nav {
-  float: center;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
+.navBar {
   width: 100%;
+  /* background-color: #65A8A6; */
+}
+
+.navBar ul li {
+  display: inline-block;
+}
+
+.navBar a {
+  color: whitesmoke;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  padding: 30px 40px;
+}
+
+.navBar a:hover {
+  background: skyblue;
+  border-radius: 20px;
+}
+
+.menu-trigger {
+  display: none;
+  color: whitesmoke;
+}
+
+@media screen and (max-width:500px) {
+  .menu-trigger {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    border-top: 1px #79896D solid;
+  }
+
+  nav ul {
+    display: none;
+  }
 }

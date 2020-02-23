@@ -1,0 +1,31 @@
+.homepageHeader {
+  color: whitesmoke;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+
+.homepageSubHeader {
+  color: whitesmoke;
+}
+
+.homepageText {
+  color: black;
+  margin: auto;
+}
+
+.homepageCard {
+  border-width: 100%;
+  font-size: 35px;
+  max-width: 90%;
+  min-width: 70%;
+  box-shadow: 0 4px 8px 0 whitesmoke;
+  margin: 20px auto;
+  min-height: 15vh;
+  border-radius: 20px;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 6%;
+  background: silver;
+  opacity: 0.7;
+}

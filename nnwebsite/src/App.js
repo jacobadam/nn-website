@@ -9,11 +9,11 @@ import Scope from "./components/Scope";
 import Contact from "./components/Contact";
 import Location from "./components/Location";
 import Links from "./components/Links";
+
 class App extends Component {
   render() {
     return (
-      <div className="App" >
-        <header className="App-header">
+      <div className="App">
             <Navbar/>
           <Router>
             <Homepage path="/"/>
@@ -24,7 +24,6 @@ class App extends Component {
             <Links path="/links"/>
           </Router>
             <Footer/>
-        </header>
       </div>
     );
   }

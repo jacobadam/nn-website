@@ -4,9 +4,7 @@ import '../css/Navbar.css';
 class Header extends Component {
   render() {
     return (
-      <div className="navbar">
-        <h1 className="logo"></h1>
-        <nav>
+      <div className="navBar">
           <ul>
             <li>
               <a href="/">Home</a>
@@ -27,7 +25,6 @@ class Header extends Component {
               <a href="/links">Links</a>
             </li>
           </ul>
-        </nav>
       </div>
     );
   }
